@@ -48,6 +48,41 @@
     .item {
       background: linear-gradient(135deg, #f065, #06f5);
     }
+
+
+    .left-section {
+      grid-column: span 4 / span 4;
+      background: linear-gradient(135deg, #f065, #06f5);
+    }
+
+    @media (min-width: 768px) {
+      .left-section {
+        grid-column: span 6 / span 6;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .left-section {
+        grid-column: span 5 / span 5;
+      }
+    }
+
+    .right-section {
+      grid-column: span 4 / span 4;
+      background: linear-gradient(135deg, #1cc5, #6355);
+    }
+
+    @media (min-width: 768px) {
+      .right-section {
+        grid-column: span 6 / span 6;
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .right-section {
+        grid-column: span 7 / span 7;
+      }
+    }
   </style>
 </head>
 <body>
@@ -64,6 +99,9 @@
     <div class="item"></div>
     <div class="item"></div>
     <div class="item"></div>
+
+    <div class="left-section"></div>
+    <div class="right-section"></div>
   </div>
 </body>
 </html>
