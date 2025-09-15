@@ -17,6 +17,7 @@
     />
     <label for="password-input">Password</label>
     <input
+      aria-describedby="password-hint"
       autocomplete="new-password"
       id="password-input"
       minlength="8"
@@ -24,6 +25,9 @@
       required
       type="password"
     />
+    <div id="password-hint">
+      Your password must be at least 8 characters long.
+    </div>
     <button>Sign up</button>
   </form>
 </body>
